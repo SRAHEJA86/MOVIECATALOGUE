@@ -10,7 +10,7 @@ The API has been developed using microservices and there are 3 microservices dev
 3. Movie catalogue service which fetches the information from the above two services to form a movie catalog item using rest template.
 
 Database
-At the database end, Postgres DB has been used to store and retrieve the information
+At the database end, PostgreSQL(Server 12) DB has been used to store and retrieve the information.
 There are primarily two tables created movies and rating with a foreign key relationship using movieId
 
 Usage
