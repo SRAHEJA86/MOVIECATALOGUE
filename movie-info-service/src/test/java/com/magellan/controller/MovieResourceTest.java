@@ -1,5 +1,6 @@
 package com.magellan.controller;
 
+import org.junit.Ignore;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -31,6 +32,7 @@ class MovieResourceTest {
         this.mockMvc = MockMvcBuilders.webAppContextSetup(context).build();
     }
 
+    @Ignore
     @Test
     public void testGetMovies() {
         String url = "/movies/ABC";
