@@ -69,18 +69,6 @@ class RatingDAOImplTest {
         Mockito.when(jdbcTemplate.update(sql,param, holder));
         RatingDAOImpl ratingDAOImpl = new RatingDAOImpl(jdbcTemplate);
         Rating rating = new Rating("400","3");
-        assertEquals(,ratingDAOImpl.insertRating(rating));
-    }
-
-    @Test
-    void updateRating() {
-    }
-
-    @Test
-    void deleteRating() {
-    }
-
-    @Test
-    void getAllRating() {
+        Mockito.verify(jdbcTemplate);
     }
 }
